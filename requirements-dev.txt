@@ -1,0 +1,2 @@
+# Development / CI only (the library itself has no third-party dependency).
+pytest>=7.0

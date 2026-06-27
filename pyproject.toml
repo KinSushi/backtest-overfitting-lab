@@ -1,0 +1,6 @@
+# Tooling configuration. The pipeline is pure-Python (zero third-party dependency).
+# Python >= 3.10 required (tested in CI on 3.10 / 3.11 / 3.12).
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,1 @@
+# No third-party dependency: the pipeline uses only the Python standard library (>= 3.10).

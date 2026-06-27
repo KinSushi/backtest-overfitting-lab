@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 340" role="img" aria-label="Backtest Overfitting Lab — pure-Python AFML validation, after Marcos López de Prado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#12161d"/>
+    </linearGradient>
+    <linearGradient id="isfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="oosfill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f85149" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#f85149" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#3fb950"/>
+      <stop offset="0.5" stop-color="#f0883e"/>
+      <stop offset="1"   stop-color="#f85149"/>
+    </linearGradient>
+  </defs>
+
+  <!-- card -->
+  <rect x="2" y="2" width="1276" height="336" rx="22" fill="url(#bg)" stroke="#20262e" stroke-width="1.5"/>
+  <!-- verdict spine: healthy -> caution -> overfit -->
+  <rect x="22" y="40" width="5" height="260" rx="2.5" fill="url(#spine)" opacity="0.85"/>
+
+  <!-- ============ LEFT : identity ============ -->
+  <circle cx="58" cy="84" r="5" fill="#3fb950"/>
+  <circle cx="58" cy="84" r="9" fill="none" stroke="#3fb950" stroke-opacity="0.30" stroke-width="1.5"/>
+  <text x="74" y="89" font-family="ui-monospace,'SF Mono','Cascadia Code',Menlo,Consolas,monospace"
+        font-size="18" letter-spacing="1.5" fill="#8b949e">backtest-overfitting-lab</text>
+
+  <text x="50" y="152" font-family="'Segoe UI',system-ui,-apple-system,Roboto,'Helvetica Neue',Arial,sans-serif"
+        font-size="47" font-weight="800" fill="#e6edf3">Backtest <tspan fill="#f0883e">Overfitting</tspan> Lab</text>
+
+  <text x="52" y="192" font-family="'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif"
+        font-size="20" fill="#9aa5b1">Tells a real edge from an optimizer's illusion.</text>
+
+  <text x="52" y="230" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace"
+        font-size="15" fill="#7d8ea0">DSR · PBO/CSCV · Reality Check · SPA &#160;·&#160; 0-dependency · 382 tests</text>
+
+  <text x="52" y="264" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace"
+        font-size="13.5" fill="#586069">after Marcos López de Prado — <tspan font-style="italic">Advances in Financial Machine Learning</tspan></text>
+
+  <!-- ============ RIGHT : the signature figure ============ -->
+  <rect x="748" y="70" width="462" height="200" rx="14" fill="#0a0e14" stroke="#20262e" stroke-width="1"/>
+  <text x="1192" y="92" text-anchor="end" font-family="ui-monospace,Menlo,Consolas,monospace"
+        font-size="11" letter-spacing="0.5" fill="#586069">equity · in-sample vs out-of-sample</text>
+
+  <!-- baseline -->
+  <line x1="766" y1="246" x2="1192" y2="246" stroke="#21262d" stroke-width="1"/>
+  <!-- IS|OOS divider -->
+  <line x1="985" y1="100" x2="985" y2="246" stroke="#4a535e" stroke-width="1" stroke-dasharray="3 5"/>
+  <text x="975" y="116" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#3fb950" fill-opacity="0.85">IS</text>
+  <text x="995" y="116" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#f85149" fill-opacity="0.9">OOS</text>
+
+  <!-- in-sample: shines -->
+  <path d="M766,232 L806,224 L846,209 L890,199 L928,171 L960,141 L985,118 L985,246 L766,246 Z" fill="url(#isfill)"/>
+  <path d="M766,232 L806,224 L846,209 L890,199 L928,171 L960,141 L985,118" fill="none" stroke="#3fb950" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#586069">
+    <circle cx="808" cy="226" r="2.5"/><circle cx="848" cy="212" r="2.5"/><circle cx="892" cy="196" r="2.5"/>
+    <circle cx="926" cy="176" r="2.5"/><circle cx="962" cy="146" r="2.5"/>
+  </g>
+
+  <!-- out-of-sample: collapses -->
+  <path d="M985,118 L1025,162 L1065,151 L1108,185 L1148,178 L1190,207 L1190,246 L985,246 Z" fill="url(#oosfill)"/>
+  <path d="M985,118 L1025,162 L1065,151 L1108,185 L1148,178 L1190,207" fill="none" stroke="#f85149" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- peak = best backtest -->
+  <circle cx="985" cy="118" r="4.5" fill="#3fb950" stroke="#0a0e14" stroke-width="2"/>
+  <text x="978" y="106" text-anchor="end" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#7d8ea0">best backtest</text>
+
+  <!-- figure caption -->
+  <text x="748" y="292" font-family="ui-monospace,'SF Mono',Menlo,Consolas,monospace"
+        font-size="13" font-style="italic" fill="#6e7681">Fig. — looks great in-sample, collapses out-of-sample.</text>
+</svg>
